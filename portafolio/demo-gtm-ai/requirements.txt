@@ -1,0 +1,3 @@
+# Solo necesaria para el modo real (con OPENAI_API_KEY).
+# El modo --mock funciona sin instalar nada (solo librería estándar de Python).
+openai>=1.0.0
