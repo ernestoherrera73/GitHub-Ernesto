@@ -258,6 +258,9 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
 .list { margin: 0; padding-left: 18px; }
 .list li { color: var(--slate); margin-bottom: 8px; }
 .skills-head { margin-top: 40px; }
+.toolbox { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; margin-top: 20px; }
+.toolbox-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--slate-2); margin: 0 0 10px; font-family: var(--font-sans); }
+.toolbox-group .chips { margin-top: 0; }
 .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 9px; margin: 14px 0 0; padding: 0; }
 .chips li {
   background: #fff; border: 1px solid var(--line);
