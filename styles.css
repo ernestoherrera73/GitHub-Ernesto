@@ -258,8 +258,8 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
 .list { margin: 0; padding-left: 18px; }
 .list li { color: var(--slate); margin-bottom: 8px; }
 .skills-head { margin-top: 40px; }
-.toolbox { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; margin-top: 20px; }
-.toolbox-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--slate-2); margin: 0 0 10px; font-family: var(--font-sans); }
+.toolbox { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 40px; margin-top: 24px; }
+.toolbox-label { font-size: .95rem; font-weight: 600; font-family: var(--font-serif); color: var(--navy); margin: 0 0 8px; line-height: 1.15; }
 .toolbox-group .chips { margin-top: 0; }
 .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 9px; margin: 14px 0 0; padding: 0; }
 .chips li {
@@ -309,6 +309,7 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
   .hero-grid { grid-template-columns: 1fr; gap: 34px; padding-block: 54px 60px; }
   .hero-card { max-width: 420px; }
   .two-col { grid-template-columns: 1fr; gap: 28px; }
+  .toolbox { grid-template-columns: 1fr; gap: 24px; }
   .contact-grid { grid-template-columns: 1fr; gap: 24px; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }
   .timeline-period { padding-top: 0; }
