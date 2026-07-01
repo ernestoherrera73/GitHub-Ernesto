@@ -218,6 +218,7 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
   padding: 24px;
   box-shadow: var(--shadow-sm);
   transition: transform .14s ease, box-shadow .16s ease, border-color .16s ease;
+  min-width: 0;
 }
 .card h3 { font-size: 1.12rem; margin: 0 0 8px; }
 .card p { margin: 0; color: var(--slate); font-size: .96rem; }
@@ -253,14 +254,13 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
 .timeline-tag { font-size: .75rem; font-weight: 600; color: var(--slate); background: var(--bg-alt); border: 1px solid var(--line); padding: 3px 10px; border-radius: 999px; }
 
 /* ===================== FORMACIÓN ===================== */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 24px; }
 .subhead { font-size: 1.1rem; margin: 0 0 12px; color: var(--navy); }
-.list { margin: 0; padding-left: 18px; }
-.list li { color: var(--slate); margin-bottom: 8px; }
 .skills-head { margin-top: 40px; }
-.toolbox { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 40px; margin-top: 24px; }
-.toolbox-label { font-size: .95rem; font-weight: 600; font-family: var(--font-serif); color: var(--navy); margin: 0 0 8px; line-height: 1.15; }
-.toolbox-group .chips { margin-top: 0; }
+.cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 20px; }
+.cards-toolbox { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+.edu-logo-wrap { height: 56px; display: flex; align-items: center; margin-bottom: 14px; background: #fff; }
+.edu-logo { max-height: 44px; max-width: 160px; width: auto; object-fit: contain; object-position: left center; }
+.card .chips { margin-top: 8px; }
 .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 9px; margin: 14px 0 0; padding: 0; }
 .chips li {
   background: #fff; border: 1px solid var(--line);
@@ -308,8 +308,8 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
 
   .hero-grid { grid-template-columns: 1fr; gap: 34px; padding-block: 54px 60px; }
   .hero-card { max-width: 420px; }
-  .two-col { grid-template-columns: 1fr; gap: 28px; }
-  .toolbox { grid-template-columns: 1fr; gap: 24px; }
+  .cards-2 { grid-template-columns: 1fr; gap: 16px; }
+  .cards-toolbox { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; gap: 24px; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }
   .timeline-period { padding-top: 0; }
@@ -319,6 +319,7 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
   .container { padding-inline: 18px; }
   .section { padding-block: 56px; }
   .hero-actions .btn, .contact-actions .btn { width: 100%; }
+  .cards-toolbox { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
