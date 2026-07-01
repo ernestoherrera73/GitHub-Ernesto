@@ -85,3 +85,11 @@ Orden requerido:
 4. Re-ejecutar la verificación contra los artefactos actualizados antes de archivar.
 
 No aplicar arreglos directos solo en código dentro de esa ventana sin actualizar los artefactos OpenSpec.
+
+## 8. Sitios estáticos con toggle de idioma (data-es / data-en)
+
+Aprendizaje del portafolio web (Bloque 1, 2026-06-30):
+
+- El script de toggle selecciona `querySelectorAll("[data-es][data-en]")`. Un elemento con solo `data-es` (sin `data-en`) **no se traduce** al activar EN — permanece en español. Documentar siempre qué atributos faltan en cada bloque de trabajo.
+- Los OG images deben ser PNG rasterizado (≥ 1200×630 px) para compatibilidad con LinkedIn/WhatsApp; SVG no renderiza en la mayoría de plataformas sociales. El SVG sirve como favicon y asset general, no como OG image.
+- Favicons SVG (`type="image/svg+xml"`) funcionan en navegadores modernos; para compatibilidad máxima agregar también un `.ico` o PNG 32×32.

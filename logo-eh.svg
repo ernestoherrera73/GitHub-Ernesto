@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#ffffff"/>
+  <text x="8" y="152"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="120"
+        font-weight="300"
+        fill="#51627a">e</text>
+  <rect x="97" y="30" width="8" height="144" rx="4" fill="#00cfc9"/>
+  <text x="110" y="152"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="120"
+        font-weight="300"
+        fill="#51627a">h</text>
+</svg>

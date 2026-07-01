@@ -43,3 +43,7 @@ rules:
   design:
     - Documentar el CÓMO: decisiones técnicas, alternativas consideradas y trade-offs
     - Incluir solo lo necesario para implementar sin ambigüedad
+
+  post-merge:
+    - Al archivar un cambio o hacer merge, ejecutar el paso obligatorio definido en
+      .claude/rules/sdd-post-merge-update.md (actualizar reglas SDD con aprendizajes del cambio)
