@@ -258,8 +258,8 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.15
 .skills-head { margin-top: 40px; }
 .cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 20px; }
 .cards-toolbox { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
-.edu-logo-wrap { height: 56px; display: flex; align-items: center; margin-bottom: 14px; background: #fff; }
-.edu-logo { max-height: 44px; max-width: 160px; width: auto; object-fit: contain; object-position: left center; }
+.edu-logo-wrap { height: 64px; display: flex; align-items: center; margin-bottom: 14px; background: #fff; }
+.edu-logo { height: 56px; width: auto; max-width: 180px; object-fit: contain; }
 .card .chips { margin-top: 8px; }
 .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 9px; margin: 14px 0 0; padding: 0; }
 .chips li {
