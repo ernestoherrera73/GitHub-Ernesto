@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatización de facturación logística con n8n — Ernesto Herrera Rosales</title>
+  <meta name="description" content="Caso de automatización aplicada al negocio para reducir trabajo manual, mejorar trazabilidad y acelerar la preparación de información administrativa-financiera en una operación logística." />
+  <link rel="icon" type="image/png" href="../eh.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-nav { display: flex; align-items: center; justify-content: space-between; min-height: 66px; gap: 16px; }
+    .case-nav-back { font-size: .88rem; padding: 8px 18px; }
+    .case-hero-body { padding-block: 64px 72px; max-width: 780px; }
+    .case-hero-body h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin: 0 0 18px; letter-spacing: -.3px; line-height: 1.2; }
+    .case-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .prose p + p { margin-top: 18px; }
+    .card-num { display: block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 10px; }
+    .principles-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4px 40px; }
+    .principles-list li { padding: 13px 0 13px 16px; color: var(--navy); font-size: .96rem; border-left: 3px solid var(--accent); line-height: 1.5; font-weight: 500; }
+    .arch-list { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+    .arch-list li { padding: 10px 14px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: .9rem; color: var(--slate); display: flex; gap: 10px; align-items: center; }
+    .arch-list li::before { content: "\25A0"; color: var(--accent); font-size: .55rem; flex-shrink: 0; }
+    .flow-diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 22px 0 0; padding: 22px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); }
+    .flow-node { background: var(--accent-soft); color: var(--navy); border: 1px solid #c5d8f8; border-radius: var(--radius-sm); padding: 9px 14px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+    .flow-arrow { color: var(--accent); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .tools-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .tools-chips li { background: var(--accent-soft); border: 1px solid #c5d8f8; color: var(--navy); padding: 8px 16px; border-radius: 999px; font-size: .88rem; font-weight: 600; }
+    .case-closing-wrap { max-width: 680px; margin-inline: auto; text-align: center; }
+    .case-closing-quote { font-size: 1.08rem; color: #cdd9e8; margin: 0 0 32px; line-height: 1.7; font-style: italic; }
+    .case-cta-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    @media (max-width: 480px) {
+      .arch-list { grid-template-columns: 1fr; }
+      .principles-list { grid-template-columns: 1fr; }
+      .case-cta-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container case-nav">
+      <a class="brand" href="../index.html" aria-label="Ernesto Herrera Rosales">
+        <img class="brand-logo" src="../eh.png" alt="" width="38" height="38" />
+        <span class="brand-name">Ernesto Herrera</span>
+      </a>
+      <a class="btn btn-ghost case-nav-back" href="../index.html#portafolio">&#8592; Portafolio</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="case-hero-body">
+          <p class="eyebrow">Automatización aplicada al negocio</p>
+          <div class="case-tags">
+            <span class="tag">n8n</span>
+            <span class="tag">Logística</span>
+            <span class="tag">Procesos financieros</span>
+            <span class="tag">Automatización</span>
+          </div>
+          <h1>Automatización de facturación logística con n8n</h1>
+          <p class="lead">Caso de automatización aplicada al negocio para reducir trabajo manual, mejorar trazabilidad y acelerar la preparación de información administrativa-financiera en una operación logística.</p>
+          <a class="btn btn-ghost" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA QUE RESUELVE -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">El problema que resuelve</h2>
+        <div class="prose">
+          <p>En una operación de transportación y logística, el área de cobranza recibía semanalmente un archivo con cientos de órdenes que debían procesarse manualmente para preparar información relacionada con facturas, órdenes de compra, cartas porte y registros operativos.</p>
+          <p>El proceso requería revisar la información, extraer datos clave, preparar archivos individuales y generar insumos para su carga posterior en un portal externo. Dependiendo del volumen semanal, el trabajo podía tomar entre uno y uno y medio días de esfuerzo manual.</p>
+          <p>Además del tiempo invertido, el proceso tenía un riesgo importante: errores de captura, inconsistencias desde la fuente o archivos mal preparados podían retrasar el pago de facturas y generar fricción administrativa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MI ENFOQUE -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Mi enfoque</h2>
+        <div class="prose">
+          <p>Mi enfoque fue tratar el proceso como un flujo operativo repetible: entrada de información, validación, transformación, generación de archivos y control de errores.</p>
+          <p>La prioridad no era automatizar por automatizar, sino reducir fricción en un proceso crítico para cobranza, mejorar trazabilidad y permitir que el equipo dedicara menos tiempo a tareas mecánicas y más tiempo a validar excepciones.</p>
+          <p>El resultado fue un workflow en n8n diseñado para procesar la información, preparar archivos individuales y detectar posibles errores desde la fuente antes de la carga final.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLUJO CONCEPTUAL -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Flujo conceptual de la solución</h2>
+        <p class="section-intro">Cinco etapas que transforman un proceso manual en un flujo automatizado, trazable y orientado a excepciones.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">Etapa 01</span>
+            <h3>Recepción de archivo fuente</h3>
+            <p>El proceso inicia con un archivo semanal que contiene cientos de órdenes y datos relacionados con la operación logística.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Etapa 02</span>
+            <h3>Lectura y estructuración de datos</h3>
+            <p>El workflow interpreta la información del archivo, identifica campos clave y organiza los registros para su procesamiento.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Etapa 03</span>
+            <h3>Validación de información</h3>
+            <p>La automatización revisa consistencias básicas, identifica posibles faltantes o errores desde la fuente y separa registros que requieren revisión manual.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Etapa 04</span>
+            <h3>Generación de archivos CSV</h3>
+            <p>El sistema genera archivos individuales por registro, preparando la información necesaria para facturas, órdenes, cartas porte y registros asociados.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Etapa 05</span>
+            <h3>Revisión y carga final</h3>
+            <p>El equipo valida únicamente excepciones o errores detectados, y posteriormente realiza la carga final en el portal correspondiente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARQUITECTURA DE ALTO NIVEL -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Arquitectura de alto nivel</h2>
+        <p class="section-intro">Componentes del flujo automatizado y su relación en el proceso.</p>
+        <ul class="arch-list">
+          <li>Archivo fuente semanal</li>
+          <li>Workflow en n8n</li>
+          <li>Reglas de validación</li>
+          <li>Transformación de datos</li>
+          <li>Generación de CSVs</li>
+          <li>Carpeta de salida</li>
+          <li>Reporte de errores y excepciones</li>
+          <li>Validación final por el equipo</li>
+        </ul>
+        <div class="flow-diagram">
+          <span class="flow-node">Archivo fuente</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">n8n</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Validación</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Transformación</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">CSVs</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Revisión</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Carga final</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACTO OPERATIVO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Impacto operativo</h2>
+        <div class="prose">
+          <p>La automatización permitió procesar entre 400 y 800 órdenes semanales, reduciendo una actividad que podía tomar entre 1 y 1.5 días de trabajo manual a unos minutos de procesamiento automatizado.</p>
+          <p>Más allá del ahorro de tiempo, el principal valor fue mejorar el control del proceso: separar errores desde la fuente, estandarizar la generación de archivos, reducir riesgo de captura manual y dar mayor trazabilidad a una actividad directamente relacionada con cobranza.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRENDIZAJES DEL CASO -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Aprendizajes del caso</h2>
+        <ul class="principles-list">
+          <li>No todos los procesos administrativos deben escalar con más personas; algunos deben escalar con mejor diseño operativo.</li>
+          <li>Automatizar no significa eliminar revisión humana, sino enfocar la revisión en excepciones.</li>
+          <li>La calidad de la fuente de datos es tan importante como la automatización.</li>
+          <li>Un workflow bien diseñado debe mejorar trazabilidad, no solo velocidad.</li>
+          <li>Las herramientas no-code / low-code permiten validar oportunidades de eficiencia con rapidez.</li>
+          <li>La automatización aplicada al negocio debe medirse por impacto operativo, no por complejidad técnica.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS UTILIZADAS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Herramientas utilizadas</h2>
+        <p class="section-intro">Caja de herramientas para automatización operativa, sin dependencias de desarrollo tradicional.</p>
+        <ul class="tools-chips">
+          <li>n8n</li>
+          <li>Procesamiento de archivos</li>
+          <li>CSV</li>
+          <li>Validación de datos</li>
+          <li>Automatización de workflows</li>
+          <li>Integración con repositorio de salida</li>
+          <li>Revisión de excepciones</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IMPACTO EN ORGANIZACIONES SIMILARES -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Impacto en organizaciones similares</h2>
+        <div class="prose">
+          <p>Este tipo de automatización puede aplicarse a procesos de alto volumen en áreas como cobranza, facturación, conciliación, operaciones, logística, compras o back office.</p>
+          <p>El patrón es especialmente útil cuando existen archivos recurrentes, reglas repetibles, preparación manual de información, riesgo de errores y dependencia de personas para tareas operativas de bajo valor agregado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-contact">
+      <div class="container">
+        <div class="case-closing-wrap">
+          <p class="case-closing-quote">"Este caso refleja mi enfoque para aplicar tecnología y automatización a problemas reales de negocio: entender el proceso, identificar fricción operativa, diseñar una solución pragmática y convertir tareas manuales en flujos más trazables, rápidos y escalables."</p>
+          <div class="case-cta-actions">
+            <a class="btn btn-primary" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ingernestoherrera/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="../CV_ErnestoHerrera_ING_202606.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&#169; 2026 Ernesto Herrera Rosales</span>
+      <a href="../index.html">Portafolio ejecutivo</a>
+    </div>
+  </footer>
+
+</body>
+</html>
