@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go-to-Market B2B y desarrollo de negocio — Ernesto Herrera Rosales</title>
+  <meta name="description" content="Framework comercial para llevar soluciones tecnológicas al mercado enterprise, construyendo propuesta de valor, prospección, pipeline y alineación entre ventas, tecnología y delivery." />
+  <link rel="icon" type="image/png" href="../eh.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-nav { display: flex; align-items: center; justify-content: space-between; min-height: 66px; gap: 16px; }
+    .case-nav-back { font-size: .88rem; padding: 8px 18px; }
+    .case-hero-body { padding-block: 64px 72px; max-width: 780px; }
+    .case-hero-body h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin: 0 0 18px; letter-spacing: -.3px; line-height: 1.2; }
+    .case-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .prose p + p { margin-top: 18px; }
+    .card-num { display: block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 10px; }
+    .flow-diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 22px 0 0; padding: 22px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); }
+    .flow-node { background: var(--accent-soft); color: var(--navy); border: 1px solid #c5d8f8; border-radius: var(--radius-sm); padding: 9px 14px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+    .flow-arrow { color: var(--accent); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .deliverables-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0 40px; }
+    .deliverables-list li { padding: 12px 0; color: var(--slate); font-size: .96rem; border-bottom: 1px solid var(--line); display: flex; gap: 12px; align-items: flex-start; }
+    .deliverables-list li::before { content: "\2192"; color: var(--accent); font-weight: 700; flex-shrink: 0; font-size: .85rem; margin-top: 2px; }
+    .principles-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4px 40px; }
+    .principles-list li { padding: 13px 0 13px 16px; color: var(--navy); font-size: .96rem; border-left: 3px solid var(--accent); line-height: 1.5; font-weight: 500; }
+    .tools-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .tools-chips li { background: var(--accent-soft); border: 1px solid #c5d8f8; color: var(--navy); padding: 8px 16px; border-radius: 999px; font-size: .88rem; font-weight: 600; }
+    .case-closing-wrap { max-width: 680px; margin-inline: auto; text-align: center; }
+    .case-closing-quote { font-size: 1.08rem; color: #cdd9e8; margin: 0 0 32px; line-height: 1.7; font-style: italic; }
+    .case-cta-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    @media (max-width: 480px) {
+      .deliverables-list { grid-template-columns: 1fr; }
+      .principles-list { grid-template-columns: 1fr; }
+      .case-cta-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container case-nav">
+      <a class="brand" href="../index.html" aria-label="Ernesto Herrera Rosales">
+        <img class="brand-logo" src="../eh.png" alt="" width="38" height="38" />
+        <span class="brand-name">Ernesto Herrera</span>
+      </a>
+      <a class="btn btn-ghost case-nav-back" href="../index.html#portafolio">&#8592; Portafolio</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="case-hero-body">
+          <p class="eyebrow">Framework comercial</p>
+          <div class="case-tags">
+            <span class="tag">B2B Sales</span>
+            <span class="tag">Go-to-Market</span>
+            <span class="tag">Desarrollo de negocio</span>
+            <span class="tag">Tecnología enterprise</span>
+          </div>
+          <h1>Go-to-Market B2B y desarrollo de negocio</h1>
+          <p class="lead">Framework comercial para llevar soluciones tecnológicas al mercado enterprise, construyendo propuesta de valor, prospección, pipeline y alineación entre ventas, tecnología y delivery.</p>
+          <a class="btn btn-ghost" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA QUE RESUELVE -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">El problema que resuelve</h2>
+        <div class="prose">
+          <p>Muchas organizaciones tecnológicas tienen capacidades sólidas de desarrollo, implementación o servicio, pero no siempre cuentan con una función comercial B2B suficientemente estructurada para convertir esas capacidades en oportunidades reales de mercado.</p>
+          <p>El reto no es únicamente "salir a vender". El verdadero desafío es definir a qué mercado se quiere llegar, qué problema se resuelve, para quién, con qué propuesta de valor, por qué ahora, cómo se prospecta, cómo se califica una oportunidad y cómo se alinea la promesa comercial con la capacidad real de entrega.</p>
+          <p>Un modelo Go-to-Market B2B busca convertir capacidades tecnológicas en una máquina comercial más clara, medible y repetible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MI ENFOQUE -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Mi enfoque</h2>
+        <div class="prose">
+          <p>Mi enfoque parte de conectar tres dimensiones: mercado, propuesta de valor y capacidad de ejecución.</p>
+          <p>Una estrategia comercial no puede diseñarse únicamente desde el producto ni únicamente desde la venta. Debe considerar el problema del cliente, la madurez del mercado, los canales de prospección, el proceso de calificación, la estructura de la propuesta, el modelo de pricing, la capacidad de delivery y los aprendizajes que se obtienen en cada interacción comercial.</p>
+          <p>El objetivo es construir un sistema comercial que permita aprender rápido, enfocar esfuerzos, priorizar oportunidades y convertir conversaciones en pipeline real.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTES DEL FRAMEWORK -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Componentes del framework Go-to-Market B2B</h2>
+        <p class="section-intro">Seis componentes que convierten capacidades tecnológicas en una función comercial repetible y escalable.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>Definición de mercado objetivo</h3>
+            <p>Identificar segmentos, industrias, tipos de cliente, dolores relevantes, urgencia del problema y condiciones que hacen viable una oportunidad comercial.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>Propuesta de valor</h3>
+            <p>Traducir capacidades tecnológicas en beneficios claros para el cliente, conectando problema, impacto esperado, diferenciadores y razones para actuar.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>Prospección y generación de demanda</h3>
+            <p>Diseñar canales, mensajes, criterios de búsqueda, acercamientos y mecanismos de lead generation para generar conversaciones relevantes con el mercado objetivo.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">04</span>
+            <h3>Calificación y construcción de pipeline</h3>
+            <p>Establecer criterios para priorizar oportunidades, entender probabilidad, valor potencial, fit estratégico, urgencia y capacidad real de entrega.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">05</span>
+            <h3>Propuestas y alineación interna</h3>
+            <p>Coordinar producto, tecnología, operaciones y delivery para construir propuestas viables, defendibles y alineadas con el problema real del cliente.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">06</span>
+            <h3>Aprendizaje comercial y mejora continua</h3>
+            <p>Convertir feedback del mercado en ajustes de propuesta, mensajes, segmentos, pricing, procesos y capacidades internas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLUJO CONCEPTUAL -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Flujo conceptual</h2>
+        <p class="section-intro">El Go-to-Market no termina cuando se genera una oportunidad. Se fortalece cuando cada conversación comercial mejora el entendimiento del mercado, la propuesta de valor y la capacidad de entrega.</p>
+        <div class="flow-diagram">
+          <span class="flow-node">Mercado objetivo</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Problema del cliente</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Propuesta de valor</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Prospección</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Calificación</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Pipeline</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Propuesta</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Delivery</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Aprendizaje</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTREGABLES TÍPICOS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Entregables típicos</h2>
+        <p class="section-intro">Artefactos comerciales que materializan el framework en cada organización.</p>
+        <ul class="deliverables-list">
+          <li>Definición de mercado objetivo</li>
+          <li>Segmentación de clientes</li>
+          <li>Mapa de problemas y dolores por industria</li>
+          <li>Propuesta de valor</li>
+          <li>Mensajes comerciales</li>
+          <li>Playbook de prospección</li>
+          <li>Criterios de calificación de oportunidades</li>
+          <li>Pipeline inicial</li>
+          <li>Estructura de propuesta comercial</li>
+          <li>Modelo de coordinación con producto, tecnología y delivery</li>
+          <li>Rutina de seguimiento comercial</li>
+          <li>Aprendizajes del mercado y ajustes de oferta</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRINCIPIOS DE EJECUCIÓN COMERCIAL -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Principios de ejecución comercial</h2>
+        <ul class="principles-list">
+          <li>No todo prospecto es una oportunidad.</li>
+          <li>Una propuesta de valor debe partir del problema, no de la herramienta.</li>
+          <li>El pipeline debe medirse por calidad, no solo por volumen.</li>
+          <li>Ventas y delivery deben estar alineados desde el inicio.</li>
+          <li>El mercado siempre retroalimenta la oferta.</li>
+          <li>La velocidad comercial no debe romper la capacidad de entrega.</li>
+          <li>Una función B2B necesita proceso, disciplina y aprendizaje continuo.</li>
+          <li>La confianza es un activo comercial, especialmente en tecnología enterprise.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IMPACTO ESPERADO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Impacto esperado</h2>
+        <div class="prose">
+          <p>Un modelo Go-to-Market B2B bien estructurado permite enfocar mejor los esfuerzos comerciales, generar conversaciones más relevantes, construir pipeline de mayor calidad, alinear expectativas con clientes y reducir fricción entre ventas, tecnología y delivery.</p>
+          <p>El valor no está solo en vender más, sino en construir una función comercial más repetible, confiable y escalable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRENDIZAJES DEL CASO -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Aprendizajes del caso</h2>
+        <ul class="principles-list">
+          <li>La función comercial B2B debe construirse como un sistema, no como una suma de esfuerzos aislados.</li>
+          <li>La propuesta de valor se valida en conversaciones reales con el mercado.</li>
+          <li>Las áreas técnicas y de delivery deben participar temprano para evitar promesas difíciles de cumplir.</li>
+          <li>El pipeline requiere disciplina, seguimiento y criterios claros de calificación.</li>
+          <li>En tecnología enterprise, la confianza se construye combinando conocimiento del negocio, claridad técnica y capacidad de ejecución.</li>
+          <li>El Go-to-Market debe evolucionar conforme se aprende del cliente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS / CAPACIDADES -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Herramientas y capacidades involucradas</h2>
+        <p class="section-intro">Combinación de capacidades ejecutivas y herramientas comerciales para construir y activar el framework.</p>
+        <ul class="tools-chips">
+          <li>Estrategia comercial B2B</li>
+          <li>Desarrollo de negocio</li>
+          <li>Go-to-Market</li>
+          <li>Prospección</li>
+          <li>Lead generation</li>
+          <li>Pipeline management</li>
+          <li>Solution Selling</li>
+          <li>Account Management</li>
+          <li>Propuestas comerciales</li>
+          <li>Alineación producto-tecnología-delivery</li>
+          <li>CRM</li>
+          <li>Sales Navigator</li>
+          <li>Apollo</li>
+          <li>HubSpot</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- APLICABILIDAD -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Aplicabilidad en organizaciones similares</h2>
+        <div class="prose">
+          <p>Este enfoque es aplicable a empresas tecnológicas que buscan lanzar nuevas soluciones B2B, abrir mercados, vender fuera de su base tradicional de clientes, estructurar una función comercial o convertir capacidades técnicas en una propuesta enterprise más clara y vendible.</p>
+          <p>Es especialmente útil cuando existe tecnología o capacidad operativa, pero falta un modelo comercial repetible para llevarla al mercado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-contact">
+      <div class="container">
+        <div class="case-closing-wrap">
+          <p class="case-closing-quote">"Este caso refleja mi enfoque para conectar estrategia comercial, tecnología y ejecución: entender el mercado, construir una propuesta de valor clara, desarrollar pipeline y alinear la promesa de venta con la capacidad real de entrega."</p>
+          <div class="case-cta-actions">
+            <a class="btn btn-primary" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ingernestoherrera/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="../CV_ErnestoHerrera_ING_202606.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&#169; 2026 Ernesto Herrera Rosales</span>
+      <a href="../index.html">Portafolio ejecutivo</a>
+    </div>
+  </footer>
+
+</body>
+</html>
