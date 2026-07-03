@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelo Operativo Enterprise — Ernesto Herrera Rosales</title>
+  <meta name="description" content="Framework ejecutivo para escalar operaciones de tecnología enterprise, alineando estrategia comercial, customer delivery, estructura organizacional, KPIs, partners y ejecución operativa." />
+  <link rel="icon" type="image/png" href="../eh.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-nav { display: flex; align-items: center; justify-content: space-between; min-height: 66px; gap: 16px; }
+    .case-nav-back { font-size: .88rem; padding: 8px 18px; }
+    .case-hero-body { padding-block: 64px 72px; max-width: 780px; }
+    .case-hero-body h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin: 0 0 18px; letter-spacing: -.3px; line-height: 1.2; }
+    .case-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .prose p + p { margin-top: 18px; }
+    .card-num { display: block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 10px; }
+    .deliverables-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0 40px; }
+    .deliverables-list li { padding: 12px 0; color: var(--slate); font-size: .96rem; border-bottom: 1px solid var(--line); display: flex; gap: 12px; align-items: flex-start; }
+    .deliverables-list li::before { content: "->"; color: var(--accent); font-weight: 700; flex-shrink: 0; font-size: .85rem; margin-top: 2px; }
+    .case-closing-wrap { max-width: 680px; margin-inline: auto; text-align: center; }
+    .case-closing-quote { font-size: 1.08rem; color: #cdd9e8; margin: 0 0 32px; line-height: 1.7; font-style: italic; }
+    .case-cta-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    @media (max-width: 480px) {
+      .deliverables-list { grid-template-columns: 1fr; }
+      .case-cta-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container case-nav">
+      <a class="brand" href="../index.html" aria-label="Ernesto Herrera Rosales">
+        <img class="brand-logo" src="../eh.png" alt="" width="38" height="38" />
+        <span class="brand-name">Ernesto Herrera</span>
+      </a>
+      <a class="btn btn-ghost case-nav-back" href="../index.html#portafolio">&#8592; Portafolio</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="case-hero-body">
+          <p class="eyebrow">Framework ejecutivo</p>
+          <div class="case-tags">
+            <span class="tag">Operación</span>
+            <span class="tag">Customer Delivery</span>
+            <span class="tag">Escalamiento</span>
+            <span class="tag">Gobierno operativo</span>
+          </div>
+          <h1>Modelo Operativo Enterprise</h1>
+          <p class="lead">Framework ejecutivo para escalar operaciones de tecnología enterprise, alineando estrategia comercial, customer delivery, estructura organizacional, KPIs, partners y ejecución operativa.</p>
+          <a class="btn btn-ghost" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA QUE RESUELVE -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">El problema que resuelve</h2>
+        <div class="prose">
+          <p>Cuando una operación de tecnología enterprise comienza a crecer, el reto deja de ser únicamente vender más o entregar proyectos puntuales. El verdadero desafío es construir una estructura capaz de sostener el crecimiento sin perder control operativo, calidad de servicio ni confianza del cliente.</p>
+          <p>En muchas organizaciones, las responsabilidades se mezclan, los procesos dependen de personas clave, los KPIs no están suficientemente gobernados y las áreas comerciales, técnicas y operativas no siempre avanzan con la misma prioridad.</p>
+          <p>Un modelo operativo enterprise busca resolver esa tensión: convertir crecimiento en capacidad organizada de ejecución.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MI ENFOQUE -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Mi enfoque</h2>
+        <div class="prose">
+          <p>Mi enfoque parte de entender la operación como un sistema completo: estrategia comercial, cuentas estratégicas, delivery, field services, partners, inventario, procesos, estructura, talento y gobierno de indicadores.</p>
+          <p>El objetivo no es diseñar un organigrama ideal en papel, sino construir un modelo operativo que permita ejecutar mejor, escalar con mayor disciplina y responder a clientes enterprise con velocidad, claridad y confiabilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPAS DEL MODELO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Capas del modelo</h2>
+        <p class="section-intro">Cada capa aborda una dimensión crítica de la operación. Trabajan de forma integrada, no como silos independientes.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>Estrategia comercial y foco de mercado</h3>
+            <p>Definir qué clientes atender, qué oportunidades priorizar y qué capacidades debe construir la operación para crecer con foco.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>Customer Delivery y gobierno de servicio</h3>
+            <p>Establecer mecanismos de seguimiento, KPIs, escalaciones, comunicación y control operativo para asegurar continuidad y calidad en clientes enterprise.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>Estructura organizacional y roles</h3>
+            <p>Separar responsabilidades, clarificar funciones, reducir dependencia de personas clave y preparar la operación para crecer.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">04</span>
+            <h3>Field Services, partners y cobertura</h3>
+            <p>Diseñar una red operativa propia y tercerizada que permita responder con velocidad, disciplina y cobertura adecuada.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">05</span>
+            <h3>Procesos, inventario y sistemas</h3>
+            <p>Alinear procesos internos, herramientas, inventarios y flujos de información con las necesidades reales del servicio.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">06</span>
+            <h3>Transformación organizacional y adopción</h3>
+            <p>Comunicar el cambio, involucrar personas, crear agentes de cambio y convertir acuerdos directivos en hábitos operativos sostenibles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTREGABLES TÍPICOS -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Entregables típicos</h2>
+        <p class="section-intro">Artefactos ejecutivos que materializan el framework en cada organización.</p>
+        <ul class="deliverables-list">
+          <li>Mapa de capacidades operativas</li>
+          <li>Definición de roles y responsabilidades</li>
+          <li>Modelo de gobierno de KPIs</li>
+          <li>Flujos de escalación y toma de decisiones</li>
+          <li>Matriz de cobertura operativa</li>
+          <li>Modelo de coordinación con partners</li>
+          <li>Procesos críticos documentados</li>
+          <li>Roadmap de transformación organizacional</li>
+          <li>Quick wins para estabilización y adopción</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IMPACTO ESPERADO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Impacto esperado</h2>
+        <div class="prose">
+          <p>Un modelo operativo bien diseñado permite mejorar la visibilidad del negocio, reducir fricción entre áreas, acelerar la toma de decisiones, fortalecer la confianza de clientes enterprise y preparar a la organización para crecer sin perder control.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-contact">
+      <div class="container">
+        <div class="case-closing-wrap">
+          <p class="case-closing-quote">"Este framework forma parte de mi enfoque para conectar estrategia, tecnología y operación en entornos enterprise."</p>
+          <div class="case-cta-actions">
+            <a class="btn btn-primary" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ingernestoherrera/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="../CV_ErnestoHerrera_ING_202606.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&#169; 2026 Ernesto Herrera Rosales</span>
+      <a href="../index.html">Portafolio ejecutivo</a>
+    </div>
+  </footer>
+
+</body>
+</html>
