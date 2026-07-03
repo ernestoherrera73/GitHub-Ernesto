@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Implementación TMS y transformación logística — Ernesto Herrera Rosales</title>
+  <meta name="description" content="Caso de transformación digital para modernizar una operación logística mediante la evaluación, selección e implementación de una plataforma TMS." />
+  <link rel="icon" type="image/png" href="../eh.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-nav { display: flex; align-items: center; justify-content: space-between; min-height: 66px; gap: 16px; }
+    .case-nav-back { font-size: .88rem; padding: 8px 18px; }
+    .case-hero-body { padding-block: 64px 72px; max-width: 780px; }
+    .case-hero-body h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin: 0 0 18px; letter-spacing: -.3px; line-height: 1.2; }
+    .case-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .prose p + p { margin-top: 18px; }
+    .card-num { display: block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 10px; }
+    .capabilities-grid { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+    .capabilities-grid li { padding: 10px 14px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: .88rem; font-weight: 500; color: var(--navy); display: flex; gap: 10px; align-items: center; }
+    .capabilities-grid li::before { content: "\25CF"; color: var(--accent); font-size: .45rem; flex-shrink: 0; }
+    .flow-diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 22px 0 0; padding: 22px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); }
+    .flow-node { background: var(--accent-soft); color: var(--navy); border: 1px solid #c5d8f8; border-radius: var(--radius-sm); padding: 9px 14px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+    .flow-arrow { color: var(--accent); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .principles-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4px 40px; }
+    .principles-list li { padding: 13px 0 13px 16px; color: var(--navy); font-size: .96rem; border-left: 3px solid var(--accent); line-height: 1.5; font-weight: 500; }
+    .tools-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .tools-chips li { background: var(--accent-soft); border: 1px solid #c5d8f8; color: var(--navy); padding: 8px 16px; border-radius: 999px; font-size: .88rem; font-weight: 600; }
+    .case-closing-wrap { max-width: 680px; margin-inline: auto; text-align: center; }
+    .case-closing-quote { font-size: 1.08rem; color: #cdd9e8; margin: 0 0 32px; line-height: 1.7; font-style: italic; }
+    .case-cta-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    @media (max-width: 480px) {
+      .capabilities-grid { grid-template-columns: 1fr; }
+      .principles-list { grid-template-columns: 1fr; }
+      .case-cta-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container case-nav">
+      <a class="brand" href="../index.html" aria-label="Ernesto Herrera Rosales">
+        <img class="brand-logo" src="../eh.png" alt="" width="38" height="38" />
+        <span class="brand-name">Ernesto Herrera</span>
+      </a>
+      <a class="btn btn-ghost case-nav-back" href="../index.html#portafolio">&#8592; Portafolio</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="case-hero-body">
+          <p class="eyebrow">Transformación digital</p>
+          <div class="case-tags">
+            <span class="tag">TMS</span>
+            <span class="tag">Logística</span>
+            <span class="tag">SaaS</span>
+            <span class="tag">Operación</span>
+          </div>
+          <h1>Implementación TMS y transformación logística</h1>
+          <p class="lead">Caso de transformación digital para modernizar una operación logística mediante la evaluación, selección e implementación de una plataforma TMS.</p>
+          <a class="btn btn-ghost" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA QUE RESUELVE -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">El problema que resuelve</h2>
+        <div class="prose">
+          <p>En operaciones de transportación y logística, la tecnología puede convertirse en una limitante cuando los sistemas existentes ya no soportan adecuadamente el volumen transaccional, la trazabilidad requerida, la integración entre áreas o la velocidad que exige el negocio.</p>
+          <p>El reto no era únicamente cambiar de sistema. El verdadero desafío era modernizar la forma en que la operación gestionaba viajes, información, mantenimiento, almacén, compras, cuentas por pagar, tesorería, contabilidad y finanzas.</p>
+          <p>Una implementación TMS bien planteada debía resolver la operación diaria, pero también preparar al negocio para crecer con mayor control, visibilidad y disciplina operativa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MI ENFOQUE -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Mi enfoque</h2>
+        <div class="prose">
+          <p>Mi enfoque fue tratar la selección del TMS como una decisión de negocio, no solo como una decisión tecnológica.</p>
+          <p>Primero era necesario entender los procesos críticos de la operación, los dolores del sistema anterior, los riesgos de seguir operando con una plataforma limitada y las capacidades que la organización necesitaba desarrollar.</p>
+          <p>Después se realizó un benchmark de soluciones, comparando alternativas con base en funcionalidad, escalabilidad, cobertura de procesos, facilidad de adopción, soporte, costo-beneficio y alineación con las necesidades reales del negocio. El objetivo era seleccionar una plataforma que no solo resolviera el problema actual, sino que permitiera construir una operación más integrada, trazable y escalable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASES DEL PROYECTO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Fases del proyecto</h2>
+        <p class="section-intro">Seis fases que transforman una decisión tecnológica en capacidad organizacional sostenible.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">Fase 01</span>
+            <h3>Diagnóstico operativo y tecnológico</h3>
+            <p>Entender las limitaciones del sistema legacy, los procesos críticos de la operación logística, los puntos de fricción y las necesidades de visibilidad, control e integración.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Fase 02</span>
+            <h3>Benchmark de soluciones TMS</h3>
+            <p>Evaluar distintas plataformas considerando funcionalidad, escalabilidad, cobertura modular, soporte, facilidad de adopción, costo-beneficio y alineación con la operación.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Fase 03</span>
+            <h3>Selección de plataforma</h3>
+            <p>Reducir alternativas, comparar finalistas y seleccionar la solución con mejor ajuste entre necesidades operativas, capacidad tecnológica y viabilidad de implementación.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Fase 04</span>
+            <h3>Implementación por módulos</h3>
+            <p>Desplegar capacidades de forma ordenada, integrando procesos comerciales, operativos, administrativos y financieros sin perder continuidad operativa.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Fase 05</span>
+            <h3>Adopción y gestión del cambio</h3>
+            <p>Acompañar a los usuarios, ajustar procesos, resolver fricciones, traducir necesidades operativas al sistema y evitar que la tecnología se convierta en una imposición aislada.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Fase 06</span>
+            <h3>Estabilización y mejora continua</h3>
+            <p>Dar seguimiento a la operación, identificar ajustes necesarios, fortalecer disciplina de uso y convertir la plataforma en una fuente de visibilidad y control para la gestión diaria.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPACIDADES HABILITADAS -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Capacidades habilitadas</h2>
+        <p class="section-intro">El valor de una plataforma TMS no está únicamente en digitalizar viajes. Su verdadero impacto aparece cuando conecta procesos operativos, administrativos y financieros en una misma lógica de gestión.</p>
+        <ul class="capabilities-grid">
+          <li>Gestión comercial</li>
+          <li>Planeación y control de viajes</li>
+          <li>Torre de control</li>
+          <li>Operaciones</li>
+          <li>Mantenimiento</li>
+          <li>Almacén</li>
+          <li>Compras</li>
+          <li>Cuentas por pagar</li>
+          <li>Tesorería</li>
+          <li>Contabilidad</li>
+          <li>Finanzas</li>
+          <li>Trazabilidad operativa</li>
+          <li>Control administrativo</li>
+          <li>Visibilidad para toma de decisiones</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ARQUITECTURA CONCEPTUAL -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Arquitectura conceptual del cambio</h2>
+        <p class="section-intro">De un sistema legacy limitado a una operación integrada y escalable, en seis pasos secuenciales.</p>
+        <div class="flow-diagram">
+          <span class="flow-node">Sistema legacy</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Diagnóstico</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Benchmark TMS</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Selección</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Implementación</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Adopción</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Operación escalable</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACTO ESPERADO -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Impacto esperado</h2>
+        <div class="prose">
+          <p>Una implementación TMS bien ejecutada permite mejorar la visibilidad operativa, reducir dependencia de procesos manuales, integrar áreas que antes trabajaban de forma fragmentada y fortalecer la toma de decisiones.</p>
+          <p>El impacto no está solo en tener un nuevo sistema, sino en crear una operación más ordenada, trazable y preparada para escalar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRENDIZAJES DEL CASO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Aprendizajes del caso</h2>
+        <ul class="principles-list">
+          <li>La selección de tecnología debe partir del proceso, no de la herramienta.</li>
+          <li>Un TMS no resuelve por sí solo una operación desordenada; requiere rediseño, adopción y gobierno.</li>
+          <li>El benchmark debe evaluar funcionalidad, pero también capacidad de adopción real.</li>
+          <li>La implementación debe conectar operación, administración y finanzas.</li>
+          <li>La gestión del cambio es tan importante como la configuración del sistema.</li>
+          <li>La tecnología debe crear visibilidad para decidir mejor, no solo digitalizar tareas.</li>
+          <li>El éxito depende de alinear usuarios, procesos, liderazgo y plataforma.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS / CAPACIDADES -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Capacidades de transformación involucradas</h2>
+        <p class="section-intro">No como stack técnico, sino como capacidades ejecutivas para liderar una transformación digital en logística.</p>
+        <ul class="tools-chips">
+          <li>Evaluación de soluciones SaaS</li>
+          <li>Benchmark tecnológico</li>
+          <li>Modelado de procesos</li>
+          <li>Gestión de implementación</li>
+          <li>Transformación digital</li>
+          <li>Gestión del cambio</li>
+          <li>Integración operativa</li>
+          <li>Trazabilidad</li>
+          <li>Supply chain / logística</li>
+          <li>Back office operativo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IMPACTO EN ORGANIZACIONES SIMILARES -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Impacto en organizaciones similares</h2>
+        <div class="prose">
+          <p>Este tipo de transformación es aplicable a organizaciones logísticas que han crecido sobre sistemas heredados, procesos manuales o herramientas desconectadas.</p>
+          <p>El patrón es especialmente útil cuando la operación necesita mayor trazabilidad, integración entre áreas, disciplina administrativa y visibilidad para escalar sin perder control.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-contact">
+      <div class="container">
+        <div class="case-closing-wrap">
+          <p class="case-closing-quote">"Este caso refleja mi enfoque para liderar transformación digital desde una perspectiva de negocio: entender la operación, evaluar tecnología con criterio, seleccionar soluciones escalables y acompañar la adopción para convertir una plataforma en capacidad organizacional."</p>
+          <div class="case-cta-actions">
+            <a class="btn btn-primary" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ingernestoherrera/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="../CV_ErnestoHerrera_ING_202606.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&#169; 2026 Ernesto Herrera Rosales</span>
+      <a href="../index.html">Portafolio ejecutivo</a>
+    </div>
+  </footer>
+
+</body>
+</html>
