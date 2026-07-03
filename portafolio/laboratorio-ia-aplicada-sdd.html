@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio de IA aplicada y SDD — Ernesto Herrera Rosales</title>
+  <meta name="description" content="Exploración personal de IA aplicada, Spec-Driven Development y herramientas AI-native para convertir contexto de negocio en prototipos, automatizaciones y sistemas más ejecutables." />
+  <link rel="icon" type="image/png" href="../eh.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-nav { display: flex; align-items: center; justify-content: space-between; min-height: 66px; gap: 16px; }
+    .case-nav-back { font-size: .88rem; padding: 8px 18px; }
+    .case-hero-body { padding-block: 64px 72px; max-width: 780px; }
+    .case-hero-body h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); margin: 0 0 18px; letter-spacing: -.3px; line-height: 1.2; }
+    .case-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .prose p + p { margin-top: 18px; }
+    .card-num { display: block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 10px; }
+    .flow-diagram { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 22px 0 0; padding: 22px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); }
+    .flow-node { background: var(--accent-soft); color: var(--navy); border: 1px solid #c5d8f8; border-radius: var(--radius-sm); padding: 9px 14px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
+    .flow-arrow { color: var(--accent); font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+    .tools-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; padding: 0; list-style: none; }
+    .tools-chips li { background: var(--accent-soft); border: 1px solid #c5d8f8; color: var(--navy); padding: 8px 16px; border-radius: 999px; font-size: .88rem; font-weight: 600; }
+    .use-cases-grid { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+    .use-cases-grid li { padding: 10px 14px; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: .88rem; font-weight: 500; color: var(--slate); display: flex; gap: 10px; align-items: center; }
+    .use-cases-grid li::before { content: "\25CF"; color: var(--accent); font-size: .45rem; flex-shrink: 0; }
+    .principles-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4px 40px; }
+    .principles-list li { padding: 13px 0 13px 16px; color: var(--navy); font-size: .96rem; border-left: 3px solid var(--accent); line-height: 1.5; font-weight: 500; }
+    .lab-status { margin-top: 26px; padding: 20px 24px; background: var(--bg-card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius-sm); }
+    .lab-status p { margin: 0; color: var(--slate); font-size: .96rem; line-height: 1.6; }
+    .case-closing-wrap { max-width: 680px; margin-inline: auto; text-align: center; }
+    .case-closing-quote { font-size: 1.08rem; color: #cdd9e8; margin: 0 0 32px; line-height: 1.7; font-style: italic; }
+    .case-cta-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    @media (max-width: 480px) {
+      .use-cases-grid { grid-template-columns: 1fr; }
+      .principles-list { grid-template-columns: 1fr; }
+      .case-cta-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container case-nav">
+      <a class="brand" href="../index.html" aria-label="Ernesto Herrera Rosales">
+        <img class="brand-logo" src="../eh.png" alt="" width="38" height="38" />
+        <span class="brand-name">Ernesto Herrera</span>
+      </a>
+      <a class="btn btn-ghost case-nav-back" href="../index.html#portafolio">&#8592; Portafolio</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="case-hero-body">
+          <p class="eyebrow">R&amp;D personal · Exploración activa</p>
+          <div class="case-tags">
+            <span class="tag">IA aplicada</span>
+            <span class="tag">SDD</span>
+            <span class="tag">Automatización</span>
+            <span class="tag">Prototipado SaaS</span>
+          </div>
+          <h1>Laboratorio de IA aplicada y SDD</h1>
+          <p class="lead">Exploración personal de IA aplicada, Spec-Driven Development y herramientas AI-native para convertir contexto de negocio en prototipos, automatizaciones y sistemas más ejecutables.</p>
+          <a class="btn btn-ghost" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ ESTE LABORATORIO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Por qué este laboratorio</h2>
+        <div class="prose">
+          <p>La adopción de IA en empresas no depende únicamente de tener mejores modelos o más herramientas. Uno de los retos principales está en traducir correctamente la intención de negocio en especificaciones, procesos, decisiones y sistemas que puedan ejecutarse de forma consistente.</p>
+          <p>Este laboratorio personal nace de esa inquietud: explorar cómo herramientas de IA, Spec-Driven Development y flujos de automatización pueden ayudar a separar el contexto de negocio de la ejecución técnica, reduciendo fricción entre idea, especificación, prototipo y validación.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MI ENFOQUE -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Mi enfoque</h2>
+        <div class="prose">
+          <p>Mi enfoque no parte de la tecnología como fin, sino del problema de negocio que se quiere resolver.</p>
+          <p>Primero se define el contexto: objetivo, usuario, proceso, restricciones, criterios de éxito y decisiones clave. Después se traduce ese contexto en especificaciones más claras, flujos de trabajo, prototipos o automatizaciones que puedan ser construidas, evaluadas y mejoradas con mayor velocidad.</p>
+          <p>La intención es entender cómo usar IA para acelerar la ejecución sin perder claridad estratégica, criterio de negocio ni control sobre el resultado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÍNEAS DE EXPLORACIÓN -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Líneas de exploración</h2>
+        <p class="section-intro">Cinco áreas donde la IA y el SDD pueden reducir fricción entre estrategia de negocio y ejecución técnica.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">Línea 01</span>
+            <h3>Spec-Driven Development aplicado a negocio</h3>
+            <p>Exploración de cómo convertir necesidades de negocio en especificaciones claras, criterios de aceptación, reglas, flujos y artefactos que guíen la construcción de soluciones.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Línea 02</span>
+            <h3>Separación entre contexto y ejecución</h3>
+            <p>Diseño de una forma de trabajo donde el contexto, las decisiones y las reglas de negocio puedan documentarse antes de involucrar herramientas, código o automatización.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Línea 03</span>
+            <h3>Prototipado SaaS asistido por IA</h3>
+            <p>Uso de herramientas AI-native para acelerar la creación de prototipos SaaS, validar ideas y explorar soluciones sin depender inicialmente de ciclos largos de desarrollo.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Línea 04</span>
+            <h3>Automatización de procesos comerciales</h3>
+            <p>Exploración de aplicaciones en marketing, ventas, cotizaciones, atención operativa, back office y procesos repetitivos que pueden beneficiarse de IA y automatización.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">Línea 05</span>
+            <h3>Orquestación con herramientas y MCP</h3>
+            <p>Exploración de cómo conectar herramientas, contexto y agentes mediante MCP y flujos de trabajo que permitan mayor continuidad entre análisis, documentación, prototipado y ejecución.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLUJO CONCEPTUAL -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Flujo conceptual del laboratorio</h2>
+        <p class="section-intro">El valor no está únicamente en construir prototipos rápidos, sino en mejorar la calidad de la traducción entre problema de negocio, especificación y ejecución.</p>
+        <div class="flow-diagram">
+          <span class="flow-node">Contexto de negocio</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Especificación</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Reglas y criterios</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Prototipo</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Automatización</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Validación</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-node">Aprendizaje</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS EXPLORADAS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Herramientas exploradas</h2>
+        <p class="section-intro">Caja de exploración para entender cómo la IA puede acelerar análisis, documentación, automatización y prototipado, siempre partiendo del contexto de negocio.</p>
+        <ul class="tools-chips">
+          <li>ChatGPT</li>
+          <li>OpenAI API</li>
+          <li>Claude Code</li>
+          <li>Gemini</li>
+          <li>Antigravity</li>
+          <li>n8n</li>
+          <li>Make</li>
+          <li>Replit</li>
+          <li>Bolt.new</li>
+          <li>MCP</li>
+          <li>SDD</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CASOS DE USO POTENCIALES -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Casos de uso potenciales</h2>
+        <p class="section-intro">Líneas de exploración para identificar patrones reutilizables: convertir procesos ambiguos o manuales en flujos más claros, medibles y ejecutables.</p>
+        <ul class="use-cases-grid">
+          <li>Automatización de procesos de ventas</li>
+          <li>Generación y control de cotizaciones</li>
+          <li>Flujos de marketing y contenido</li>
+          <li>Documentación de procesos internos</li>
+          <li>Prototipos SaaS</li>
+          <li>Asistentes operativos</li>
+          <li>Análisis de información comercial</li>
+          <li>Estandarización de especificaciones</li>
+          <li>Automatización de back office</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRINCIPIOS DEL LABORATORIO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Principios del laboratorio</h2>
+        <ul class="principles-list">
+          <li>La IA debe resolver fricción real, no solo demostrar capacidad técnica.</li>
+          <li>El contexto de negocio debe ir antes que la herramienta.</li>
+          <li>Una buena especificación reduce retrabajo.</li>
+          <li>La automatización debe preservar control y trazabilidad.</li>
+          <li>No todo debe automatizarse; algunas decisiones requieren criterio humano.</li>
+          <li>El prototipo sirve para aprender, no para reemplazar estrategia.</li>
+          <li>La velocidad solo es valiosa si mantiene dirección y calidad.</li>
+          <li>La tecnología debe acercar negocio y ejecución, no separarlos más.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IMPACTO ESPERADO -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Impacto esperado</h2>
+        <div class="prose">
+          <p>El impacto esperado de este laboratorio es desarrollar una forma más clara y repetible de convertir ideas de negocio en especificaciones, prototipos y automatizaciones.</p>
+          <p>Más que perseguir herramientas específicas, el objetivo es construir criterio para aplicar IA en procesos reales, mejorar la velocidad de aprendizaje y reducir la distancia entre estrategia, operación y tecnología.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTADO ACTUAL -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Estado actual</h2>
+        <div class="lab-status">
+          <p>Este es un laboratorio personal en evolución. Actualmente se encuentra en etapa de exploración, aprendizaje y construcción de prototipos. Su propósito es desarrollar criterio práctico sobre IA aplicada, SDD y automatización, sin presentar todavía productos comerciales o casos de cliente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-contact">
+      <div class="container">
+        <div class="case-closing-wrap">
+          <p class="case-closing-quote">"Este bloque refleja mi interés en la IA no solo como tecnología emergente, sino como una nueva forma de conectar pensamiento estratégico, diseño de procesos y ejecución operativa. La oportunidad está en usar IA para convertir mejor el conocimiento de negocio en sistemas, flujos y soluciones que puedan escalar."</p>
+          <div class="case-cta-actions">
+            <a class="btn btn-primary" href="../index.html#portafolio">&#8592; Volver al portafolio</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ingernestoherrera/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="../CV_ErnestoHerrera_ING_202606.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&#169; 2026 Ernesto Herrera Rosales</span>
+      <a href="../index.html">Portafolio ejecutivo</a>
+    </div>
+  </footer>
+
+</body>
+</html>
